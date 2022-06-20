@@ -1,0 +1,51 @@
+header{
+    background-color: $colorSecundario;
+    @extend %placeholder1;
+    justify-content: space-between;
+    @include size (auto, auto);
+    padding: 0px;
+    grid-area: header;
+    .navbar{
+        .container-fluid{
+            @extend %placeholder1;
+            img{
+                margin-left: 10px;
+                @include size (70px, 80px);
+                margin-right: 10px;
+            }
+            img:hover{
+                transform: scale(1.05,1.05);
+            }
+            .logo-nombre{
+                margin-left: 20px;
+                letter-spacing: 15px;
+                word-spacing: 0px;
+                font-size: 2rem;
+                font-family: 'Anton', sans-serif;
+            }
+            a{
+                font-weight: 600;
+                padding-right: 10px;
+                margin: 0px;
+                text-decoration: none;
+                color: $colorLink;
+            }
+            ul li{
+                display: inline-block;
+            }
+            a:hover{
+                color: $colorPrincipal;
+            }
+            #navbarNav{
+                font-size: 1rem;
+                ul{
+                    li{
+                        margin-left: 80px;
+                        font-weight: bold;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

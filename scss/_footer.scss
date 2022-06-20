@@ -1,0 +1,29 @@
+footer{
+    background-color: $colorSecundario;
+    @extend %placeholder1;
+    justify-content: space-between;
+    bottom: 0;
+    @include size (100%, auto);
+    margin-top: 0px;
+    grid-area: footer;
+    .texto-footer{
+        margin-left: 5px;
+        padding: 5px;
+        h5{
+            font-size: 1rem;
+        }
+    }
+    .nav-footer{ 
+        a{
+        padding: 10px;
+        margin: 10px;
+        font-size: 2rem;
+        justify-content: right;
+        display: inline-block;
+        color: $colorLink;
+        }
+        a:hover{
+            color: $colorPrincipal;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "mixins";
+@import "variables";
+@import "header";
+@import "footer";
+@import "main";
+@import "media";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $colorPrincipal;
+    font-family: sans-serif;
+    min-height: 100vh;
+    @include size (auto, auto);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+a{
+    text-decoration: none;
+    color: $colorLink;
+}

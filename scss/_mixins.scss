@@ -1,0 +1,8 @@
+@mixin size ($ancho, $altura) {
+    width: $ancho;
+    height: $altura;
+}
+%placeholder1{
+    display: flex;
+    position: relative;
+}
